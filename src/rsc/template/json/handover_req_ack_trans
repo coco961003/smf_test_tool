@@ -1,0 +1,7 @@
+{
+    "hoState": "PREPARED",
+    "n2SmInfo": {
+        "contentId": "ngapie"
+    },
+    "n2SmInfoType": "HANDOVER_REQ_ACK"
+}

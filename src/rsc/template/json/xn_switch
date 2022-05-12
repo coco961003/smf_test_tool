@@ -1,0 +1,26 @@
+{
+    "ueLocation": {
+        "nrLocation": {
+            "tai": {
+                "plmnId": {
+                    "mcc": "460",
+                    "mnc": "02"
+                },
+                "tac": "000101"
+            },
+            "ncgi": {
+                "plmnId": {
+                    "mcc": "460",
+                    "mnc": "02"
+                },
+                "nrCellId": "000100001"
+            },
+            "ueLocationTimestamp": "2021-12-06T19:16:47Z+08:00"
+        }
+    },
+    "toBeSwitched": true,
+    "n2SmInfo": {
+        "contentId": "ngapie"
+    },
+    "n2SmInfoType": "PATH_SWITCH_REQ"
+}

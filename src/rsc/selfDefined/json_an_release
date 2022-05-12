@@ -1,0 +1,26 @@
+{
+    "ueLocation": {
+        "nrLocation": {
+            "tai": {
+                "plmnId": {
+                    "mcc": "460",
+                    "mnc": "02"
+                },
+                "tac": "0000"
+            },
+            "ncgi": {
+                "plmnId": {
+                    "mcc": "460",
+                    "mnc": "02"
+                },
+                "nrCellId": "000000001"
+            },
+            "ueLocationTimestamp": "2021-12-06T11:35:39Z+08:00"
+        }
+    },
+    "upCnxState": "DEACTIVATED",
+    "ngApCause": {
+        "group": 0,
+        "value": 20
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "ueLocation": {
+        "nrLocation": {
+            "tai": {
+                "plmnId": {
+                    "mcc": "460",
+                    "mnc": "02"
+                },
+                "tac": "0000"
+            },
+            "ncgi": {
+                "plmnId": {
+                    "mcc": "460",
+                    "mnc": "02"
+                },
+                "nrCellId": "000000001"
+            }
+        }
+    },
+    "n1SmMsg": {
+        "contentId": "n1msg"
+    }
+}

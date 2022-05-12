@@ -1,0 +1,24 @@
+{
+    "ueLocation": {
+        "nrLocation": {
+            "tai": {
+                "plmnId": {
+                    "mcc": "460",
+                    "mnc": "02"
+                },
+                "tac": "0000"
+            },
+            "ncgi": {
+                "plmnId": {
+                    "mcc": "460",
+                    "mnc": "02"
+                },
+                "nrCellId": "000000001"
+            }
+        }
+    },
+    "n2SmInfo": {
+        "contentId": "ngapie"
+    },
+    "n2SmInfoType": "PDU_RES_REL_RSP"
+}

@@ -1,0 +1,24 @@
+{
+    "anType": "3GPP_ACCESS",
+    "ratType": "NR",
+    "ueLocation": {
+        "nrLocation": {
+            "tai": {
+                "plmnId": {
+                    "mcc": "460",
+                    "mnc": "02"
+                },
+                "tac": "0000"
+            },
+            "ncgi": {
+                "plmnId": {
+                    "mcc": "460",
+                    "mnc": "02"
+                },
+                "nrCellId": "000000001"
+            },
+            "ueLocationTimestamp": "2021-12-06T11:40:43Z+08:00"
+        }
+    },
+    "upCnxState": "ACTIVATING"
+}

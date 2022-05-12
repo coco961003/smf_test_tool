@@ -1,0 +1,97 @@
+{
+    "smf_ip": "172.17.0.80",
+    "smf_port": 84,
+    "ue":{
+        "num": 1,
+        "mcc": "460",
+        "mnc": "02",
+        "imsi": "460011300000002"
+    },
+    "act_msg_num":1,
+    "msgs":[
+        {
+            "order": 1,
+            "msg_type": "pdu_establish",
+            "client_timeout": 2,
+            "gap_time": 2,
+            "json_file_path": "./rsc/selfDefined/json_estab_pdu",
+            "nas_file_path": "./rsc/template/nas/estab_pdu",
+            "url": "/nsmf-pdusession/v1/sm-contexts",
+            "msg_responses":[
+                {
+                    "ne": "AMF",
+                    "msg_type": "n1_n2_msg",
+                    "imsi": "460011300000002",
+                    "content": {
+                        "cause": "N1_N2_TRANSFER_INITIATED"
+                    }
+                },
+                {
+                    "ne": "UPF",
+                    "msg_type": "session_establishment_response",
+                    "ue_ip": "",
+                    "IEs_dict":{
+                        "Node ID":{
+                            "ipv4": "1.1.1.1"
+                        },
+                        "Cause":{
+                            "cause": "Request accepted"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "order": 2,
+            "msg_type": "pdu_modify",
+            "client_timeout": 2,
+            "gap_time": 2,
+            "json_file_path": "./rsc/selfDefined/json_ctx_modify",
+            "url_rule": "normal",
+            "url": "/nsmf-pdusession/v1/sm-contexts/imsi-460010000000001-5/modify",
+            "ngap_updates": [
+                {
+                    "pre_process": ["ipv4_2_val"],
+                    "path": ["qosFlowPerTNLInformation", "uPTransportLayerInformation", "gTPTunnel", "transportLayerAddress"],
+                    "val": "172.18.8.2"
+                }
+            ],
+            "msg_responses":[
+                {
+                    "ne": "UPF",
+                    "msg_type": "session_modification_response",
+                    "ue_ip": "",
+                    "IEs_dict":{
+                        "Cause":{
+                            "cause": "Request accepted"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "order": 3,
+            "msg_type": "pdu_release_req",
+            "client_timeout": 2,
+            "gap_time": 2,
+            "json_file_path": "./rsc/selfDefined/json_rel_pdu_req_n1_nas",
+            "nas_file_path": "./rsc/template/nas/rel_pdu_req",
+            "url_rule": "normal",
+            "url": "/nsmf-pdusession/v1/sm-contexts/imsi-460010000000001-5/modify"
+        },
+        {
+            "order": 4,
+            "msg_type": "pdu_release_rsp",
+            "client_timeout": 2,
+            "gap_time": 2,
+            "url_rule": "normal"
+        },
+        {
+            "order": 5,
+            "msg_type": "pdu_release_complete",
+            "client_timeout": 2,
+            "gap_time": 2,
+            "url_rule": "normal"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "5GSMHeader":{
+        "EPD": 46,
+        "PDUSessID": 1,
+        "PTI": 1
+    },
+    "IntegrityProtMaxDataRate":{
+        "V": "255/255"
+    },
+    "PDUSessType":{
+        "V": 1
+    },
+    "SSCMode":{
+        "V": 1
+    }
+}

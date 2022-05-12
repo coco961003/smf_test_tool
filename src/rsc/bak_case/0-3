@@ -1,0 +1,61 @@
+{
+    "smf_ip": "172.17.0.80",
+    "smf_port": 84,
+    "ue":{
+        "num": 1,
+        "mcc": "460",
+        "mnc": "02",
+        "imsi": "460011300000002"
+    },
+    "act_msg_num":1,
+    "msgs":[
+        {
+            "order": 1,
+            "msg_type": "pdu_establish",
+            "client_timeout": 2,
+            "gap_time": 2,
+            "json_file_path": "./rsc/selfDefined/json_estab_pdu",
+            "nas_file_path": "./rsc/template/nas/estab_pdu",
+            "url": "/nsmf-pdusession/v1/sm-contexts",
+            "msg_responses":[
+                {
+                    "ne": "AMF",
+                    "msg_type": "n1_n2_msg",
+                    "imsi": "460011300000002",
+                    "content": {
+                        "cause": "N1_N2_TRANSFER_INITIATED"
+                    }
+                },
+                {
+                    "ne": "UPF",
+                    "msg_type": "session_establishment_response",
+                    "ue_ip": "",
+                    "IEs_dict":{
+                        "Node ID":{
+                            "ipv4": "1.1.1.1"
+                        },
+                        "Cause":{
+                            "cause": "Request accepted"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "order": 2,
+            "msg_type": "pdu_modify",
+            "client_timeout": 2,
+            "gap_time": 2,
+            "json_file_path": "./rsc/selfDefined/json_ctx_modify",
+            "url_rule": "normal"
+        },
+        {
+            "order": 3,
+            "msg_type": "path_switch_req",
+            "client_timeout": 2,
+            "gap_time": 2,
+            "json_file_path": "./rsc/selfDefined/json_path_switch_req",
+            "url_rule": "normal"
+        }
+    ]
+}

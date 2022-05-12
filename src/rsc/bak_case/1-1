@@ -1,0 +1,26 @@
+{
+    "smf_ip": "172.17.0.80",
+    "smf_port": 84,
+    "ue":{
+        "num": 1,
+        "mcc": "460",
+        "mnc": "02",
+        "imsi": "460021300000002"
+    },
+    "act_msg_num":1,
+    "msgs":[
+        {
+            "order": 1,
+            "msg_type": "pdu_establish",
+            "client_timeout": 2,
+            "gap_time": 2,
+            "json_updates":[
+                ["supi", "imsi-460011300000003"]
+            ],
+            "nas_updates": [
+                ["PDUSessType/V", 1],
+                ["SSCMode/V", 1]
+            ]
+        }
+    ]
+}

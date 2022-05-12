@@ -1,0 +1,46 @@
+{
+    "supi": "imsi-460011300000002",
+    "pduSessionId": 1,
+    "dnn": "cmnet",
+    "sNssai": {
+        "sst": 1
+    },
+    "servingNfId": "11458",
+    "guami": {
+        "plmnId": {
+            "mcc": "460",
+            "mnc": "02"
+        },
+        "amfId": "3"
+    },
+    "servingNetwork": {
+        "mcc": "460",
+        "mnc": "02"
+    },
+    "requestType": "INITIAL_REQUEST",
+    "n1SmMsg": {
+        "contentId": "n1msg"
+    },
+    "anType": "3GPP_ACCESS",
+    "ratType": "NR",
+    "ueLocation": {
+        "nrLocation": {
+            "tai": {
+                "plmnId": {
+                    "mcc": "460",
+                    "mnc": "02"
+                },
+                "tac": "000101"
+            },
+            "ncgi": {
+                "plmnId": {
+                    "mcc": "460",
+                    "mnc": "02"
+                },
+                "nrCellId": "000000001"
+            }
+        }
+    },
+    "smContextStatusUri": "http://172.16.6.216:56567/namf-callback/v1/smContextStatus/460011300000002/1",
+    "nsmfhost": "172.17.0.80:84"
+}
